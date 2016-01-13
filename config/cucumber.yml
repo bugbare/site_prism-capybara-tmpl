@@ -5,7 +5,12 @@ std_opts = "--format #{ENV['CUCUMBER_FORMAT'] || 'pretty'} --strict --tags ~@wip
 %>
 
 <%
+unless Dir.exist?("reports")
+	Dir.mkdir('reports')
+end
+
 Dir.chdir("reports")
+
 unless Dir.exist?(Time.now.strftime('%Y-%m-%d'))
 	Dir.mkdir(Time.now.strftime('%Y-%m-%d'))
 end
