@@ -17,8 +17,8 @@
   * selenium-webdriver
   * site_prism
 
-====Bundled with
-   1.11.2
+* Bundled with bundler
+   * 1.11.2
 
 * Configuration
   1. Open a terminal and *Clone* the repo into an appropriate folder into your local environment
