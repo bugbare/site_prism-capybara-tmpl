@@ -2,24 +2,31 @@
 ===Pre-requisites
 
 * Ruby version
-** 2.2.3
+  * 2.2.3
 
 * System dependencies
+  * capybara
+  * capybara-screenshot
+  * capybara-webkit
+  * cucumber
+  * phantomjs
+  * poltergeist
+  * pry
+  * rspec
+  * rspec-expectations
+  * selenium-webdriver
+  * site_prism
+
+====Bundled with
+   1.11.2
 
 * Configuration
-
-* Database creation
-
-* Database initialization
+  1. clone the repo into an appropriate folder into your local environment
+  1. assuming you still have the terminal open, make sure you are in the local repo folder 'oscar-smoke-tests'
+  1. If you don't have bundler installed, install it now > gem install bundler
+  1. run bundle update
+  1. run bundle install
 
 * How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+  1. to run the default profile (output will be on both console and as an html file stored in a reports folder):
+    > bundle exec cucumber
