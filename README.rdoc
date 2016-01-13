@@ -21,7 +21,7 @@
    1.11.2
 
 * Configuration
-  1. *Clone* the repo into an appropriate folder into your local environment
+  1. Open a terminal and *Clone* the repo into an appropriate folder into your local environment
   1. Assuming you still have the terminal open, make sure you are in the local repo folder 'oscar-smoke-tests'
   1. If you don't have bundler installed, install it now: 
     > gem install bundler
