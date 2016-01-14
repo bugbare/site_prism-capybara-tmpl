@@ -38,8 +38,9 @@
 
 Any errors encountered here will be related to individual gem packages, that are missing some dependencies, or require sudo permissions to be installed
 
-  e.g. to install capybara-webkit sudo privileges are required, if this still does not work you may need to install qt5
-  see pre-requisite section for help, or better yet use google!
+  e.g. to install capybara-webkit sudo privileges are required, if this still does not work 
+  you may need to install xcode command line tools and/or qt5 see pre-requisite section for 
+  help, or better yet use google!
 
 ==== How to run the test suite
 * To run the default profile (output will be on both console and as an html file stored in a reports folder):
