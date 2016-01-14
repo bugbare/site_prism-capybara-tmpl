@@ -47,4 +47,4 @@ Any errors encountered here will be related to individual gem packages, that are
    > bundle exec cucumber
 
 ==== What next?
-* see the [wiki](https://github.com/springernature/oscar-smoke-tests/wiki) for tips
+* see the Wiki (https://github.com/springernature/oscar-smoke-tests/wiki) for tips on writing feature files, step definition files and page objects.
