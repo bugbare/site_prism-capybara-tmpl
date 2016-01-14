@@ -17,7 +17,7 @@ Then(/^I should see the sort by filter$/) do
 end
 
 Then(/^I should see the pagination buttons$/) do
-	expect(@app.articles.pagination.text).to eq("Previous Page Page 1 of 194 Next Page")
+	expect(@app.articles.pagination.text).to include("Previous", "Page", "Next")
 end
 
 Then(/^I should see the results list$/) do
