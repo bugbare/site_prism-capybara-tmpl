@@ -9,7 +9,7 @@
 
 ==== Ruby version
 * 2.2.3
- * If you need to install ruby, the fisrt part of the following page is very useful: https://gorails.com/setup/osx/10.10-yosemite
+ * If you need to install ruby, the first part of the following page is very useful: https://gorails.com/setup/osx/10.10-yosemite
 
 ==== System dependencies
 * capybara
@@ -45,3 +45,6 @@ Any errors encountered here will be related to individual gem packages, that are
 ==== How to run the test suite
 * To run the default profile (output will be on both console and as an html file stored in a reports folder):
    > bundle exec cucumber
+
+==== What next?
+* see the [wiki](https://github.com/springernature/oscar-smoke-tests/wiki) for tips
