@@ -12,9 +12,6 @@ GEM
     capybara-screenshot (1.0.11)
       capybara (>= 1.0, < 3)
       launchy
-    capybara-webkit (1.7.1)
-      capybara (>= 2.3.0, < 2.6.0)
-      json
     childprocess (0.5.9)
       ffi (~> 1.0, >= 1.0.11)
     cliver (0.3.2)
@@ -35,7 +32,6 @@ GEM
     event-bus (0.1.0)
     ffi (1.9.10)
     gherkin (3.2.0)
-    json (1.8.3)
     launchy (2.4.3)
       addressable (~> 2.3)
     method_source (0.8.2)
@@ -96,7 +92,6 @@ PLATFORMS
 DEPENDENCIES
   capybara
   capybara-screenshot
-  capybara-webkit
   cucumber
   phantomjs
   poltergeist

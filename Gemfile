@@ -14,7 +14,6 @@ source 'https://rubygems.org'
     gem 'phantomjs'
     gem 'poltergeist'
     gem 'pry'
-    gem 'capybara-webkit'
     gem 'capybara-screenshot'
     gem 'site_prism'
   end

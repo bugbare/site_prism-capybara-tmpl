@@ -1,7 +1,6 @@
 require 'capybara'
 require 'capybara/Poltergeist'
 require 'capybara/rspec'
-require 'capybara/webkit'
 require 'capybara/cucumber'
 require 'capybara-screenshot/cucumber'
 require 'selenium-webdriver'
