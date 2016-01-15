@@ -11,13 +11,9 @@ end
 
 Dir.chdir("reports")
 
-unless Dir.exist?(Time.now.strftime('%Y-%m-%d'))
-	Dir.mkdir(Time.now.strftime('%Y-%m-%d'))
-end
+puts "\n>>> TEST REPORT will be filed in the following path:\n" + Dir.pwd + "\/\n\n"
 
-puts "\n>>> TEST REPORT will be filed in the following path:\n" + Dir.pwd + "\/" + Time.now.strftime('%Y-%m-%d')+ "\n\n"
-
-reportfile = "reports\/" + Time.now.strftime('%Y-%m-%d') + "\/" + Time.now.strftime('%Y-%m-%d_%H-%M-%S') + "-test-report.html"
+reportfile = "reports\/" + Time.now.strftime('%Y-%m-%d_%H-%M-%S') + "-test-report.html"
 
 Dir.chdir("..")
 %>
@@ -28,4 +24,4 @@ default: --profile html_report <%= common%> features
 wip: --tags @wip:3 --wip features
 rerun: <%= rerun_opts %> --format rerun --out rerun.txt --strict --tags ~@wip
 
-html_report: --format pretty --format html --out <%= reportfile%>
+html_report: --format pretty --format html --out <%= reportfile%> --format junit --out reports

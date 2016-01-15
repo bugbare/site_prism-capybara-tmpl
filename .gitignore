@@ -16,8 +16,9 @@
 !/log/.keep
 /tmp
 
-# Ignore html files
+# Ignore html files and xml report files
 *.html
+*.xml
 
 # Ignore cucumber files
 rerun.txt
