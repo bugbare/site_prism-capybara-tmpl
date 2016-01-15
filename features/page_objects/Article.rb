@@ -1,5 +1,5 @@
 class Article < SitePrism::Page
-  set_url "http://genomebiology.biomedcentral.com.staging.oscarjournals.springer.com/articles/{doi1}/{doi2}"
+  set_url "/articles/{doi1}/{doi2}"
 
 # ARTICLE INFO SECTION
   element :articleMain, "div#Test-ImgSrc.Main_content"

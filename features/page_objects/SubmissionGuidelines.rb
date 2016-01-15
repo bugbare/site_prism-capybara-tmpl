@@ -1,5 +1,5 @@
 class SubmissionGuidelines < SitePrism::Page
-  set_url "http://genomebiology.biomedcentral.com.staging.oscarjournals.springer.com/submission-guidelines"
+  set_url "/submission-guidelines"
 
   element :submissionGuidelinesMain, "div#Test-ImgSrc.Main_content"
   

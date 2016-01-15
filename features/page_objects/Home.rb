@@ -1,5 +1,5 @@
 class Home < SitePrism::Page
-  set_url "http://genomebiology.biomedcentral.com.staging.oscarjournals.springer.com/"
+  set_url "/"
 
   element :homeMain, "div#Test-ImgSrc"
   element :articleListHeading, "div.CmsItem.CmsCollection.Tabs"
