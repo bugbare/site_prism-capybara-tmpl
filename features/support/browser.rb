@@ -1,5 +1,5 @@
 require 'capybara'
-require 'capybara/Poltergeist'
+require 'capybara/poltergeist'
 require 'capybara/rspec'
 require 'capybara/cucumber'
 require 'capybara-screenshot/cucumber'
