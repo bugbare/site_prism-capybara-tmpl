@@ -7,7 +7,7 @@ end
 And(/^I should see the about aims and scope section$/) do
 	expect(@app.about).to have_aboutHeading
 	expect(@app.about).to have_contentSections
-	expect(@app.about.contentSections.map {|content| content = content.text.to_s}).to start_with(/Open access All articles published by Genome Biology/)
+	expect(@app.about.contentSections.map {|content| content = content.text.to_s}).to include(/Genome Biology/)
 	# USEFUL FOR DEBUGGING CONTENTS OF ABOUT MAIN SECTION WHEN TEST FAILS
 	#@app.about.contentSections.map {|content| puts content.text.to_s}
 end
