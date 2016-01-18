@@ -3,7 +3,7 @@ rerun = File.file?('rerun.txt') ? IO.read('rerun.txt') : ""
 rerun_opts = rerun.to_s.strip.empty? ? "--format #{ENV['CUCUMBER_FORMAT'] || 'pretty'} features" : "--format #{ENV['CUCUMBER_FORMAT'] || 'pretty'} #{rerun}"
 std_opts = "--format #{ENV['CUCUMBER_FORMAT'] || 'pretty'} --strict --tags ~@wip"
 %>
-
+# Setup the reports folders and prefix filename with date-timestamp
 <%
 unless Dir.exist?("reports")
 	Dir.mkdir('reports')
@@ -20,8 +20,10 @@ Dir.chdir("..")
 
 <% common = "--tags ~@wip --tags ~@ignore --strict" %>
 
-default: --profile html_report <%= common%> features
+default: --profile staging --profile html_report <%= common%> features
 wip: --tags @wip:3 --wip features
 rerun: <%= rerun_opts %> --format rerun --out rerun.txt --strict --tags ~@wip
 
 html_report: --format pretty --format html --out <%= reportfile%> --format junit --out reports
+staging: TARGET=staging
+live: TARGET=live

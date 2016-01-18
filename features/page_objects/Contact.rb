@@ -1,5 +1,5 @@
 class Contact < SitePrism::Page
-  set_url "http://genomebiology.biomedcentral.com.staging.oscarjournals.springer.com/about/contact"
+  set_url "/about/contact"
 
   element :contactMain, "main"
   

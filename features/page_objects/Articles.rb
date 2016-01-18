@@ -1,5 +1,5 @@
 class Articles < SitePrism::Page
-  set_url "http://genomebiology.biomedcentral.com.staging.oscarjournals.springer.com/articles"
+  set_url "/articles"
 
   element :articlesMain, "div#Test-ImgSrc"
   element :searchField, "div.Search_field"

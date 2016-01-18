@@ -1,5 +1,5 @@
 class About < SitePrism::Page
-  set_url "http://genomebiology.biomedcentral.com.staging.oscarjournals.springer.com/about"
+  set_url "/about"
 
   element :aboutMain, "div#Test-ImgSrc"
   element :aboutHeading, "div#aimsAndScope"
