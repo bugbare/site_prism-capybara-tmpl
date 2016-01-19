@@ -14,7 +14,6 @@
 #### System dependencies
 * capybara
 * capybara-screenshot
-* capybara-webkit
 * cucumber
 * phantomjs
 * poltergeist
@@ -47,6 +46,12 @@ Any errors encountered here will be related to individual gem packages, that are
    * `bundle exec cucumber`
 * If you want to run against a specific target (`staging/live`) you can supply that as profile:
    * `bundle exec cucumber -p <environment>`
+
+#### How to analyse results
+* The first few lines will tell you which environment the tests are running against and also where a friendly html report will be stored on your local machine.
+* When run locally the console output is the first port of call as it provides enough information to see what tests are failing and usually gives enough information as to what has gone wrong.
+* Once a run is completed the html report is stored in the reports directory as described in the console output, the file will be prefixed with a date-time stamp.
+* If you find issues in the tests themselves, the console output provides some fairly good debugging information.
 
 #### What next?
 * see the Wiki (https://github.com/springernature/oscar-smoke-tests/wiki) for tips on writing feature files, step definition files and page objects.
