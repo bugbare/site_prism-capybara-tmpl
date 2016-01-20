@@ -54,4 +54,4 @@ Any errors encountered here will be related to individual gem packages, that are
 * If you find issues in the tests themselves, the console output provides some fairly good debugging information.
 
 #### What next?
-* see the Wiki (https://github.com/springernature/oscar-smoke-tests/wiki) for tips on writing feature files, step definition files and page objects.
+* see the [Wiki](https://github.com/springernature/oscar-smoke-tests/wiki) for tips on writing feature files, step definition files and page objects.
