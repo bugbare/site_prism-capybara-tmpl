@@ -22,6 +22,19 @@ if ENV['IN_BROWSER']
   AfterStep do
     sleep (ENV['PAUSE'] || 0).to_i
   end
+elsif ENV['DEBUG']
+  # DEFAULT: headless tests with poltergeist/PhantomJS
+  Capybara.register_driver :poltergeist do |app|
+    Capybara::Poltergeist::Driver.new(
+      app,
+      :phantomjs => Phantomjs.path,
+      window_size: [1280, 1024],
+      js_errors: false,
+      debug: true
+    )
+  end
+  Capybara.default_driver    = :poltergeist
+  Capybara.javascript_driver = :poltergeist
 else
   # DEFAULT: headless tests with poltergeist/PhantomJS
   Capybara.register_driver :poltergeist do |app|
