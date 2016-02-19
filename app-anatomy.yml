@@ -1,7 +1,6 @@
 environment-groups: []
 language: ruby
 libraries-to-include: []
-major-version-number: 1
 cf-username: springerqa@googlegroups.com
 ci-server-host: te-prod-go-01.springer-sbm.com
 go-pipeline-group: oscar.qa
