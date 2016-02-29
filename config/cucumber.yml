@@ -20,10 +20,20 @@ Dir.chdir("..")
 
 <% common = "--tags ~@wip --tags ~@ignore --strict" %>
 
-default: --profile staging --profile html_report <%= common%> features
-wip: --tags @wip:3 --wip features
-rerun: <%= rerun_opts %> --format rerun --out rerun.txt --strict --tags ~@wip
+# DEFAULT PROFILE: executed through command without explicit profile switch 'bundle exec cucumber'
+default: --profile staging
+
+# ENVIRONMENT PROFILES: At the moment running with no profile (default) is the same as appending "-p staging"
+staging: TARGET=staging --profile html_report <%= common%> features
+live: TARGET=live --profile html_report <%= common%> features
+
+# COMMON RUNTIME PROFILES: these profiles are part of other profiles, cannot be run on their own.
 
 html_report: --format pretty --format html --out <%= reportfile%> --format junit --out reports
-staging: TARGET=staging
-live: TARGET=live
+
+# WORK IN PROGRESS TAG PROFILE
+wip: --tags @wip:3 --wip features
+
+# DEBUG PROFILES: Must be run in conjuction with an environment profile above
+browser: IN_BROWSER=true PAUSE=1 <%= common%> features
+debug: DEBUG=true <%= common%> features
