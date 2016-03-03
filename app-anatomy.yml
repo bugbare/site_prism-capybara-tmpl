@@ -1,4 +1,3 @@
-environment-groups: []
 language: ruby
 libraries-to-include: []
 cf-username: springerqa@googlegroups.com
