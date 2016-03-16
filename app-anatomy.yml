@@ -4,4 +4,4 @@ cf-username: springerqa@googlegroups.com
 ci-server-host: te-prod-go-01.springer-sbm.com
 go-pipeline-group: oscar.qa
 test-artifact-dirs: ['reports']
-allow-missing-hook-files: false
+require-hook-files: true
