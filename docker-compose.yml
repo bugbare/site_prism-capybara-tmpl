@@ -2,13 +2,13 @@
 # https://bitbucket.org/springersbm/fig-env.
 
 code:
-  image: docker-registry.tools.pe.springer-sbm.com/springersbm/fig-env-java8-node-ruby-python-phantomjs
+  image: te-docker.docker-registry.tools.springer-sbm.com/fig-env-java8-node-ruby-python-phantomjs
   dns: *DNS
   volumes:
     - .:/home/dev/code
 
 deploy:
-  image: docker-registry.tools.pe.springer-sbm.com/springersbm/fig-env-java8-node-ruby-python-phantomjs
+  image: te-docker.docker-registry.tools.springer-sbm.com/fig-env-java8-node-ruby-python-phantomjs
   dns: *DNS
   volumes:
     - .:/home/dev/code
