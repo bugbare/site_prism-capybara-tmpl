@@ -4,7 +4,7 @@ Then(/^I should see the submission-guidelines main content section$/) do
 end
 
 Then(/^I should see the submission-guidelines on how to submit$/) do
-  expect(@app.submissionGuidelines.submissionGuidelinesMain.text).to start_with("Submission Guidelines")
+  expect(@app.submissionGuidelines.submissionGuidelinesMain.text).to include("Preparing your manuscript")
 end
 
 Then(/^I should see the submission-guidelines link to submit your manuscript in Editorial Manager$/) do

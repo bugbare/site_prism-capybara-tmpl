@@ -3,7 +3,7 @@ class Article < SitePrism::Page
 set_url "/articles/{doi1}/{doi2}"
 
 # ARTICLE INFO SECTION
-  element :articleMain, "div#Test-ImgSrc.Main_content"
+  element :articleMain, "div#main-content"
   element :articleTitle, "div.MainTitleSection"
   element :authorNames, "div.AuthorNames"
   element :articleInfo, "div.ArticleContextInformation"
@@ -19,7 +19,7 @@ set_url "/articles/{doi1}/{doi2}"
   element :resultsSection, :xpath, "//section[contains(.,'results')]"
   element :resultsFig1, "figure#Fig1.Figure"
   element :resultsTable1, "figure#Tab1.FigureTable"
-  element :resultsMathEq1, "div#Equa.Equation.EquationMathjax"
+  element :resultsMathEq1, "div.EquationContent"
 
 # DISCUSSION SECTION
   element :discussionSection, "//section[contains(.,'discussion')]"
@@ -34,8 +34,8 @@ set_url "/articles/{doi1}/{doi2}"
   element :abbreviationsSection, "section.AbbreviationGroup"
 
 # DECLARATIONS SECTION
-  element :declarationsSection, :xpath, "//section[contains(.,'Declarations')]"
-  element :additionalFiles, :xpath, "//h3[contains(.,'Additional file')]"
+  element :declarationsSection, "section#Declarations"
+  element :additionalFiles, :xpath, "//*[contains(.,'Additional file')]"
 
 # REFERENCES SECTION
   element :referencesSection, "section#Bib1"
@@ -45,7 +45,7 @@ set_url "/articles/{doi1}/{doi2}"
   element :copyrightSection, "section#CopyrightMessage"
 
 # SIDEBAR SECTION
-element :sidebar, "div.Main_sidebar"
+element :sidebar, "aside"
 
   # ARTICLE DOWNLOAD
   element :downloadPdf, "a#articlePdf"
@@ -61,7 +61,7 @@ element :sidebar, "div.Main_sidebar"
   element :socialTools, "div#sociaMediaAccounts"
 
   # UPDATES SECTION
-  element :updates, "div#crossMark.fulltext"
+  element :updates, :xpath, "//aside[contains(., 'See updates')]"
 
   # COLLECTIONS SECTION
   element :collections, "div#articleCollections"

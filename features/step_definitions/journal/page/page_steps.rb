@@ -13,7 +13,7 @@ Then(/^I should see the (.*) navigation tabs$/) do |pageName|
 	expect(@app.journalpage.navbar).to have_identityPlate
 	expect(@app.journalpage.navbar).to have_identityNav
 	expect(@app.journalpage.navbar).to have_tabs
-	expect(@app.journalpage.navbar.tabs.map {|tab| tab.text}).to eq ["HOME ABOUT ARTICLES"]
+	expect(@app.journalpage.navbar.tabs.map {|tab| tab.text}).to eq ["ABOUT ARTICLES SUBMISSION GUIDELINES"]
 end
 
 Then(/^I should see the journal title on the (.*) page$/) do |pageName|

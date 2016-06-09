@@ -5,6 +5,6 @@ class JournalPage < SitePrism::Page
 
   section :header, ::HeaderSection, "header.Header"
   section :navbar, ::NavBarSection, "main"
-  section :sidebar, ::SideBarSection, "div.Main_sidebar"
-  section :footer, ::FooterSection, "footer.Footer"
+  section :sidebar, ::SideBarSection, "div.main__sidebar"
+  section :footer, ::FooterSection, "footer.footer"
 end
